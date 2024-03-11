@@ -6,7 +6,7 @@
     --botao-ativo: #3A375E;
      --botao-inativo: rgba(58, 55, 94, 0.5);
      --texto-fundo: rgba(58, 55, 94, 0.3);
-} 
+}  
 body {
     background-color: var(--cor-de-fundo);
     color: var (--branco);
@@ -52,10 +52,20 @@ body {
     border-top: none;
 }
 
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
 .botoes {
     display: block;
 }
 @media screen and (min-width: 768px)
     .botoes {
         display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+    .botao:first-child {
+        border-radius: 0 40px 0 0;
     }
